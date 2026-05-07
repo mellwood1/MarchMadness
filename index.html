@@ -1,26 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h2>March Madness</h2>
-        <h3>Under Construction</h3>
-    </header>
-    <main>
-        <p>For my final propject I plan to create a website about the NCAA Basketball Tournament. I will put things like what the tournament is and how it works. Some notable moments throughout the years. And how hard it is to pick a perfect a bracket.</p>
-        <ul>
-            <li>Home Page: Overview of March Madness</li>
-            <li>Page 1: How the tournament works</li>
-            <li>Page 2: Famous moments from the tournaments history</li>
-            <li>Page 3: How to pick a perfect bracket (Tips and Strategies)</li>
-        </ul>
-    </main>
-    <footer>
+    <title>March Madness | Home</title>
 
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/bracket.jpg">
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>March Madness</h1>
+            <p>The Excitement of NCAA Basketball</p>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Tournament Info</a></li>
+                <li><a href="moments.html">Famous Moments</a></li>
+                <li><a href="tips.html">Bracket Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/crowd.jpg" alt="March Madness Basketball Crowd">
+        </section>
+
+        <!-- Overview Section -->
+        <section class="content-section">
+            <h2>What is March Madness?</h2>
+
+            <p>
+                March Madness is the annual NCAA Division I men's basketball tournament.
+                The tournament features 68 college basketball teams competing in a single-elimination format
+                to determine the national champion.
+            </p>
+
+            <p>
+                Every March, millions of fans fill out tournament brackets hoping to correctly predict
+                the winners of each game. The tournament is famous for buzzer beaters, Cinderella stories,
+                and unforgettable moments.
+            </p>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="content-section">
+            <h2>Countdown to Next March Madness</h2>
+            <div id="countdown"></div>
+        </section>
+
+        <!-- Slideshow Section -->
+        <section class="content-section">
+            <h2>March Madness Highlights</h2>
+
+            <div class="slideshow-container">
+                <img class="slide" src="images/cinderella.jpg" alt="Tournament Bracket">
+                <img class="slide" src="images/buzzerbeater.jpg" alt="Buzzer Beater Shot">
+                <img class="slide" src="images/upset.jpg" alt="Championship Celebration">
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Return to Top Button -->
+    <button id="topBtn">Top</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Matt Ellwood Productions</p>
+        <p><button id="footerTopBtn">Return to Top</button></p>
+        <p><a href="#">Contact Us</a></p>
     </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
